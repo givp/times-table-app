@@ -1,0 +1,172 @@
+/* TimesTableGame.css */
+.game-container {
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f2ff;
+    transition: background-color 0.5s;
+  }
+  
+  .streak-bg-1 { background-color: #e6f2ff; } /* Blue tint */
+  .streak-bg-2 { background-color: #e6ffed; } /* Green tint */
+  .streak-bg-3 { background-color: #fff9e6; } /* Yellow tint */
+  .streak-bg-4 { background-color: #f2e6ff; } /* Purple tint */
+  
+  .game-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2563eb;
+  }
+  
+  .score {
+    display: flex;
+    align-items: center;
+  }
+  
+  .score-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .star-icon {
+    color: #fcd34d;
+    fill: #fcd34d;
+  }
+  
+  .problem-container {
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .streak-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fcd34d;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .problem {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .instructions {
+    font-size: 0.875rem;
+    color: #4b83db;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .option-button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+  }
+  
+  .option-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option-button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .option-default {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .option-correct {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  .option-incorrect {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .option-inactive {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+  }
+  
+  /* Feedback alert removed */
+  
+  .streak-message {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .streak-text {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #7c3aed;
+  }
+  
+  .star-animation {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .animated-star {
+    font-size: 4rem;
+    color: #fcd34d;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  @keyframes ping {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+    70%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
