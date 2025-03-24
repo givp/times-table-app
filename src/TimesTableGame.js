@@ -145,7 +145,7 @@ const TimesTableGame = () => {
           
           {streak >= 3 && (
             <div className="streak-badge">
-              Streak: {streak}! 🔥
+              Streak: {streak} 🔥
             </div>
           )}
           <div className="problem">
