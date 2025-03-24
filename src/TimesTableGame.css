@@ -34,9 +34,11 @@
   
   .title {
     font-size: 1.8rem;
-    font-weight: bold;
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
     color: #2563eb;
   }
+  
   
   .score {
     display: flex;
