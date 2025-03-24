@@ -1,6 +1,6 @@
 # Times Table Fun
 
-Play at [https://www.timestable.fun/](https://www.timestable.fun/).
+A very simple web app for practicing your times table with endless challenges. Play at [https://www.timestable.fun/](https://www.timestable.fun/).
 
 ## Available Scripts
 
