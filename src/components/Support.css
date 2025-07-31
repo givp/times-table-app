@@ -1,0 +1,195 @@
+.support-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+.support-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.support-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.support-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.support-body {
+  padding: 40px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.support-body section {
+  margin-bottom: 30px;
+}
+
+.support-body h2 {
+  color: #667eea;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.support-body h3 {
+  color: #764ba2;
+  font-size: 1.3rem;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+}
+
+.support-body p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.support-body ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.support-body li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.support-body strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  margin: 20px 0;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #764ba2;
+}
+
+.faq-item h3 {
+  margin: 0 0 10px 0;
+  color: #764ba2;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #555;
+}
+
+.inline-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.inline-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .support-container {
+    padding: 10px;
+  }
+  
+  .support-content {
+    border-radius: 8px;
+  }
+  
+  .support-header {
+    padding: 20px;
+  }
+  
+  .support-header h1 {
+    font-size: 2rem;
+  }
+  
+  .back-link {
+    position: static;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  
+  .support-body {
+    padding: 20px;
+  }
+  
+  .support-body h2 {
+    font-size: 1.5rem;
+  }
+  
+  .support-body h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .support-body {
+    padding: 15px;
+  }
+  
+  .support-body h2 {
+    font-size: 1.3rem;
+  }
+  
+  .contact-info {
+    padding: 15px;
+  }
+  
+  .faq-item {
+    padding: 15px;
+  }
+} 

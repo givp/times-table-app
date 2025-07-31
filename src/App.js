@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TimesTableGame from './TimesTableGame';
 import Privacy from './components/Privacy';
+import Support from './components/Support';
 import Footer from './Footer';
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
             </>
           } />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
         <Analytics />
       </div>
